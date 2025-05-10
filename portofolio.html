@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">
+            <svg>
+                <use href="images/icons.svg#icon-close-mobile-menu">
+            </svg>
+        </button>
+
+        <nav class="menu-drawer-navigation">
+            <ul>
+                <li><a href="./index.html" class="menu-drawer-navigation-link">DesignTeam</a></li>
+                <li><a href="./portofolio.html" class="menu-drawer-navigation-link">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <a href="tel:+12127724150" class="menu-drawer-navigation-phone-number"><span>+1 234-567-8900</span></a>
+        <a href="mailto:info@designteam.com"
+            class="menu-drawer-navigation-mail-adress"><span>info@designteam.com</span></a>
+
+        <div class="social-mobile-links">
+            <a href="#">Instagram</a>
+            <svg class="icon-line">
+                <use xlink:href="./images/icons.svg#icon-line"></use>
+            </svg>
+            <a href="#">Twitter</a>
+            <svg class="icon-line">
+                <use xlink:href="./images/icons.svg#icon-line"></use>
+            </svg>
+            <a href="#">Facebook</a>
+            <svg class="icon-line">
+                <use xlink:href="./images/icons.svg#icon-line"></use>
+            </svg>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="menu-button js-open-menu">
+        <svg>
+            <use href="images/icons.svg#icon-mobile-menu"></use>
+        </svg>
+    </div>
+
+    <header class="global-header">
+
+        <a href="./index.html" class="header-logo"><span class="web-logo">Design</span>
+            <span class="upper-designteam-logo">Team</span></a>
+
+        <nav class="main-navigation">
+            <ul class="navigation">
+                <li><a href="./index.html" class="nav-link">DesignTeam</a></li>
+                <li><a href="./portofolio.html" class="current">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header-contacts">
+            <li>
+                <a href="mailto:info@designteam.com" class="mail-address"><svg class="icon-envelope">
+                        <use xlink:href="images/icons.svg#icon-envelope"></use>
+                    </svg><span>info@designteam.com</span></a>
+            </li>
+
+            <li>
+                <a href="tel:+12127724150" class="phone-number"><svg class="icon-smartphone">
+                        <use xlink:href="images/icons.svg#icon-smartphone"></use>
+                    </svg><span>+1 234-567-8900</span></a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="page">
+        <section class="our-work-section">
+            <!-- Container section -->
+
+            <h1> </h1>
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('web-site')"> Web-sites</button>
+                <button class="btn" onclick="filterSelection('design')"> Design</button>
+                <button class="btn" onclick="filterSelection('marketing')"> Marketing</button>
+                <button class="btn" onclick="filterSelection('apps')"> Apps</button>
+            </div>
+
+            <div class="work-cards">
+                <ul>
+                    <li class="filterDiv web-site">
+                        <div class="box">
+                            <img class="image" src="./images/technoduck.jpg" alt="Technoduck Web-site Image"
+                                width="370">
+                            <div class="overlay">
+                                <p>Technoduck is a platform where digital artists connect, collaborate, and share
+                                    creative projects</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Technoduck</b></h4>
+                                <p class="web-site">Web-site</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv design">
+
+                        <div class="box">
+                            <img class="image" src="./images/poster.jpg" alt="Poster New Orleans vs Golden State Image"
+                                width="370">
+                            <div class="overlay">
+                                <p>A poster showcasing the thrilling showdown between the dynamic New Orleans Pelicans
+                                    and the powerhouse
+                                    Golden State Warriors</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Poster New Orleans vs Golden State</b></h4>
+                                <p class="design">Design</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv apps">
+                        <div class="box">
+                            <img class="image" src=" ./images/seafood.jpg" alt="Seafood Restaurant Apps Image"
+                                width="370">
+                            <div class="overlay">
+                                <p>A convenient app for exploring, ordering, and enjoying the freshest seafood dishes,
+                                    with easy reservations
+                                </p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Seafood Restaurant</b></h4>
+                                <p class="apps">Apps</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv marketing">
+                        <div class="box">
+                            <img class="image" src=" ./images/headphones.jpg" alt="Project Prime Image" width="370">
+                            <div class="overlay">
+                                <p>A cutting-edge headset designed to elevate your immersive experience with
+                                    advanced
+                                    technology, unmatched comfort, and
+                                    superior sound quality</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Project Prime</b></h4>
+                                <p class="marketing">Marketing</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv marketing">
+                        <div class="box">
+                            <img class="image" src="./images/boxes.jpg" alt="Project Boxes Apps Image" width="370">
+                            <div class="overlay">
+                                <p>A sustainable and customizable packaging solution designed to protect and present
+                                    your products with style and
+                                    efficiency</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Project Boxes</b></h4>
+                                <p class="marketing">Marketing</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv web-site">
+                        <div class="box">
+                            <img class="image" src="./images/monitor.jpg"
+                                alt="Inspiration has no Borders Web-site Image" width="370">
+                            <div class="overlay">
+                                <p>A global platform for discovering creative tech-driven ideas and visual
+                                    inspiration
+                                </p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Inspiration has no Borders</b></h4>
+                                <p class="web-site">Web-site</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv design">
+                        <div class="box">
+                            <img class="image" src="./images/book.jpg" alt="Limited Edition Image" width="370">
+                            <div class="overlay">
+                                <p>A powerful visual journey that empowers you to embrace your uniqueness and
+                                    express
+                                    your true self in a digital age</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Limited Edition</b></h4>
+                                <p class="design">Design</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv marketing">
+                        <div class="box">
+                            <img class="image" src="./images/label.jpg" alt="Project LAB Image" width="370">
+                            <div class="overlay">
+                                <p>A sleek and durable labeling solution designed to enhance organization, providing
+                                    clear and professional identification
+                                    for your products or items</p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Project LAB</b></h4>
+                                <p class="marketing">Marketing</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="filterDiv apps">
+                        <div class="box">
+                            <img class="image" src="./images/laptop.jpg" alt="Growing Business Apps Image" width="370">
+                            <div class="overlay">
+                                <p>A smart tool to help entrepreneurs plan, track, and grow their business with ease
+                                </p>
+                            </div>
+                            <div class="box1">
+                                <h4 class="project"><b>Growing Business</b></h4>
+                                <p class="apps">Apps</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Adress Section -->
+    <footer class="bottom">
+        <div class="contact-section">
+            <div>
+                <a href="./index.html" class="bottom-logo"><span class="web-logo">Design</span><span
+                        class="bottom-designteam-logo">Team</span></a>
+                <address>
+                    <p class="location">279, Free Way, WA 5214, USA</p>
+                    <p class="contact-us">info@designteam.com</p>
+                    <p class="contact-us">+1 234-567-8900</p>
+                </address>
+            </div>
+
+            <div class="social-bottom">
+                <h4>Find us on</h4>
+                <ul>
+                    <li>
+                        <a>
+                            <svg class="icon-bottom">
+                                <use xlink:href="images/icons.svg#icon-instagram-bottom"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <svg class="icon-bottom">
+                                <use xlink:href="images/icons.svg#icon-twitter-bottom"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <svg class="icon-bottom">
+                                <use xlink:href="images/icons.svg#icon-facebook-bottom"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <svg class="icon-bottom">
+                                <use xlink:href="images/icons.svg#icon-linkedin-bottom"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-newsleter-subscriber">
+            <form action="" method="get">
+
+                <div>
+                    <label for="emailAddress">Subscribe to the newsletter</label>
+                    <div class="subscribe-button">
+                        <input class="footer-email-input-box" type="email" name="email" id="emailAddress"
+                            placeholder="E-mail" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            required>
+                        <button class="subscribe-button-input" type="submit">Subscribe
+                            <svg class="icon-send">
+                                <use xlink:href="./images/icons.svg#icon-send"></use>
+                            </svg></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Book Service Modal -->
+
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" data-modal-close><svg class="icon-close">
+                        <use xlink:href="images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p>Leave your information and we'll call you back</p>
+                <form action="" method="get" autocomplete="off" class="contact-form" onsubmit="return checkForm(this)">
+                    <div class=" form-section">
+                        <label class="label-text" for="name">Name</label>
+                        <div class="input-container">
+                            <input class="modal-input" type="text" name="name" id="name" required>
+                            <svg class="icon-person">
+                                <use xlink:href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label class="label-text" for="phone">Telephone</label>
+                        <div class="input-container">
+                            <input class="modal-input" type="tel" name="phone" id="phone" required>
+                            <svg class="icon-phone">
+                                <use xlink:href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label class="label-text" for="email">E-mail</label>
+                        <div class="input-container">
+                            <input class="modal-input" type="email" name="email" id="email"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                            <svg class="icon-email">
+                                <use xlink:href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label class="label-text" for="textarea">Comments</label>
+                        <textarea name="textarea" id="textarea" placeholder="Enter the text"></textarea>
+                    </div>
+
+                    <div class="input-container terms-and-condition-container">
+                        <input type="checkbox" required-name="terms" class="terms-and-conditions-check"
+                            name="terms-and-conditions-check" id="terms-and-conditions-check" value="checked" required>
+                        <label class=" terms-and-conditions-label" for="terms-and-conditions-check">
+                            <svg class="icon-checkbox">
+                                <use xlink:href="./images/icons.svg#icon-checkbox"></use>
+                            </svg>
+
+                            <span>
+                                I agree with the letter and accept the
+                                <a href="#">Terms and Conditions</a>
+                            </span>
+                        </label>
+                    </div>
+
+
+                    <input class="modal-send-btn" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script src=" ./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+    </div>
+
+    <script src=" ./js/buttons.js"></script>
+
+</body>
+
+</html>
